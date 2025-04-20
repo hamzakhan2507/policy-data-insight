@@ -259,3 +259,7 @@ yapf @ file:///C:/b/abs_8aidayep18/croot/yapf_1708964372649/work
 yarl @ file:///C:/b/abs_00rcuicx5k/croot/yarl_1726015884215/work
 zipp @ file:///C:/b/abs_2fcpcg89my/croot/zipp_1732630746332/work
 zstandard @ file:///C:/b/abs_82dff2ths3/croot/zstandard_1728569207191/work
+pandas
+streamlit
+plotly
+
