@@ -1,20 +1,16 @@
 import pandas as pd
-import statsmodels.formula.api as smf
+import statsmodels.api as sm
+from statsmodels.miscmodels.ordinal_model import OrderedModel
 
-# 1. Load your data
+# Load
 df = pd.read_csv('cleaned_data2020.csv')
+# Prepare
+df['race_cat'] = df['HOUSEHOLDER_RACE'].astype('category')
+df['income_cat'] = df['MONEYPY'].astype('category')
 
-# 2. (Optional) Inspect
-print(df[['MONEYPY','HOUSEHOLDER_RACE','SCALEE']].head())
-
-# 3. Specify the model using a formula:
-#    - Treat MONEYPY as a continuous (ordinal) variable
-#    - Treat HOUSEHOLDER_RACE as categorical via C()
-#    - Include the interaction term with *
-formula = 'SCALEE ~ MONEYPY * C(HOUSEHOLDER_RACE)'
-
-# 4. Fit OLS
-model = smf.ols(formula, data=df).fit()
-
-# 5. View results
-print(model.summary())
+# Exogenous: get dummies for income & race
+exog = pd.get_dummies(df[['income_cat','race_cat']], drop_first=True)
+# Fit
+ordmod = OrderedModel(df['SCALEE'], exog, distr='logit')
+ordres = ordmod.fit(method='bfgs')
+print(ordres.summary())
