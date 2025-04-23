@@ -14,3 +14,4 @@ exog = pd.get_dummies(df[['income_cat','race_cat']], drop_first=True)
 ordmod = OrderedModel(df['SCALEE'], exog, distr='logit')
 ordres = ordmod.fit(method='bfgs')
 print(ordres.summary())
+#%% Incorrect Results
