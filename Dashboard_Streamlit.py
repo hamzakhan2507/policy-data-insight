@@ -64,7 +64,7 @@ fig = px.bar(
     view_df,
     x='Category',
     y=metric,
-    title=f"{metric} by {category_type} (2015)",
+    title=f"{metric} by {category_type} (2020)",
     labels={metric: metric.replace(" Percent", " (%)")}
 )
 fig.update_layout(xaxis_tickangle=-45)
