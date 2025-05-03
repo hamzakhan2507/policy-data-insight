@@ -25,8 +25,7 @@ This project analyzes household energy insecurity in the United States using dat
 | `requirements.txt`       | Python dependencies for running the dashboard                          |
 | `r_analysis/`            | Contains ordered logit regression script, ggplot visuals, model output |
 
-**Note:** Figures are not stored in a folder but can be viewed [here (Streamlit App)](https://dashboardapppy-birkbduyuwrxwegphddq4v.streamlit.app/) or directly accessed via shared image files and plots at:
-**[🔗 Visualization Folder (Link Placeholder)](https://your-shared-link-to-images.com)**
+**Note:** Figures are saved in the [`/figures/`](./figures) folder within the repository. This includes static bar plots, choropleth maps, and regression visualizations. You can also explore interactive versions on the [Streamlit App](https://dashboardapppy-birkbduyuwrxwegphddq4v.streamlit.app/).
 
 ## 📅 Data Sources
 
