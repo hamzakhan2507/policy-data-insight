@@ -13,8 +13,8 @@ This project analyzes household energy insecurity in the United States using dat
 ## 📂 Repository Contents
 | File/Folder               | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
-| `dashboard_app.py`        | Streamlit dashboard for visual exploration of insecurity metrics            |
-| `analysis_script.py`      | Python script to generate static plots and compute metrics                  |
+| `Dashboard_Streamlit.py`  | Streamlit dashboard for visual exploration of insecurity metrics            |
+| `CODE.py`                 | Python script to generate static plots and compute metrics                  |
 | `/figures/`               | Bar plots (total: 8) for income, race, region, construction year            |
 | `/qgis_maps/`             | QGIS images showing energy insecurity and disconnect notices by region      |
 | `/r_analysis/`            | Ordered logit regression script, ggplot visuals, model output              |
@@ -24,8 +24,8 @@ This project analyzes household energy insecurity in the United States using dat
 
 ## 📅 Data Sources
 ### 1. **RECS 2020 - Household Energy Insecurity (Table HC11.1)**
-- Source: [EIA RECS 2020 Summary Tables](https://www.eia.gov/consumption/residential/data/2020/index.php?view=characteristics)
-- File: Excel format (HC11.1) was cleaned to remove formatting and saved as `cleaned_HC11.1.csv`
+- Source: [EIA RECS 2020 Survey Data](https://www.eia.gov/consumption/residential/data/2020/index.php?view=characteristics)
+- File: Excel format (Household energy insecurity (HC11.1)) was cleaned to remove formatting and saved as `cleaned_HC11.1.csv`
 
 ### 2. **RECS 2020 - Microdata**
 - Source: [EIA RECS 2020 Microdata](https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata)
@@ -42,7 +42,7 @@ cd energy-insecurity-project
 pip install -r requirements.txt
 
 # Run the dashboard
-streamlit run dashboard_app.py
+streamlit run Dashboard_Streamlit.py
 
 # Run Python analysis script
 python analysis_script.py
