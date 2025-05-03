@@ -31,7 +31,7 @@ merged.plot(
 ax1.set_title("Any Household Energy Insecurity by Census Division", fontsize=18)
 ax1.axis("off")
 plt.tight_layout()
-plt.savefig("Map_Any_Energy_Insecurity.png", dpi=300)
+plt.savefig("figures/Map_Any_Energy_Insecurity.png", dpi=300)
 
 # Plot 2: Disconnect Notice
 fig2, ax2 = plt.subplots(figsize=(14, 12))
@@ -42,4 +42,4 @@ merged.plot(
 ax2.set_title("Receiving Disconnect Notice by Census Division", fontsize=18)
 ax2.axis("off")
 plt.tight_layout()
-plt.savefig("Map_Disconnect_Notice.png", dpi=300)
+plt.savefig("figures/Map_Disconnect_Notice.png", dpi=300)
