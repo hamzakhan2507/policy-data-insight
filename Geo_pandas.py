@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load your division shapefile (all 3 files must be in this directory)
-shapefile_path = "cb_2018_us_division_500k.shp"
+shapefile_path = "cb_2018_us_division_500k"
 gdf = gpd.read_file(shapefile_path)
 
 # Explode multipolygons into singleparts (important!)
