@@ -66,7 +66,7 @@ streamlit run Dashboard_Streamlit.py
 python CODE.py
 
 # Run regional map analysis
-python Geo-pandas.py
+python Geo-Pandas.py
 ```
 
 Explore energy insecurity metrics by income, race, housing construction year, and census region:
