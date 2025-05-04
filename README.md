@@ -24,7 +24,7 @@ By examining variations in energy insecurity across income brackets, racial and 
 | `cleaned_HC11.1.csv`     | Cleaned version of RECS 2020 Table HC11.1 (energy insecurity summary)   |
 | `cleaned_data2020.csv`   | Trimmed RECS 2020 microdata (disaggregated household-level data)        |
 | `requirements.txt`       | Python dependencies for running the dashboard                           |
-| `r_analysis/`            | Contains ordered logit regression script                                |
+| `R_analysis/`            | Contains ordered logit regression script                                |
 | `figures/`               | Saved images from Python plots, QGIS maps, and ggplot regression charts |
 | `QGISProject.qgz`        | QGIS project file containing styled maps for census division totals     |
 
@@ -52,7 +52,7 @@ By examining variations in energy insecurity across income brackets, racial and 
 ### 🔹 Streamlit and Python Visualizations
 
 ```bash
-# Clone the repositorys
+# Clone the repository
 https://github.com/yourusername/energy-insecurity-project.git
 cd energy-insecurity-project
 
