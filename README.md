@@ -80,14 +80,14 @@ cd energy-insecurity-project
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the dashboard
-streamlit run Dashboard_Streamlit.py
-
 # Run bar plot analysis
 python CODE.py
 
 # Run regional map analysis
 python Geo-Pandas.py
+
+# Run the dashboard
+streamlit run Dashboard_Streamlit.py
 ```
 
 Explore energy insecurity metrics by income, race, housing construction year, and census region:
