@@ -52,7 +52,7 @@ By examining variations in energy insecurity across income brackets, racial and 
 ### 🔹 Streamlit and Python Visualizations
 
 ```bash
-# Clone the repository
+# Clone the repositorys
 https://github.com/yourusername/energy-insecurity-project.git
 cd energy-insecurity-project
 
