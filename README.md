@@ -60,10 +60,15 @@ By examining variations in energy insecurity across income brackets, racial and 
 ### 🔹 Streamlit and Python Visualizations
 
 **Execution Order:**
+
 **Step 1:** Install dependencies listed in `requirements.txt`
+
 **Step 2:** Run `CODE.py` to generate and save all bar plots in the `/figures/` folder
+
 **Step 3:** Run `Geo-pandas.py` to generate percentage-based regional choropleths
+
 **Step 4:** Run `Dashboard_Streamlit.py` to launch the Streamlit app locally or push to Streamlit Cloud
+
 Once launched, the dashboard opens in a browser window at `http://localhost:8501`.
 If deployed, others can explore the live version via the hosted Streamlit App link below.
 
