@@ -1,6 +1,5 @@
 # Energy Insecurity in U.S. Households (RECS 2020)
-
-## A data-driven exploration of energy insecurity risk across race, income, and region
+ A data-driven exploration of energy insecurity risk across race, income, and region
 
 ## 🔹 Project Summary
 
