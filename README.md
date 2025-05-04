@@ -2,10 +2,18 @@
 
 # Energy Insecurity in U.S. Households (RECS 2020)
 
+## A data-driven exploration of energy insecurity risk across race, income, and region
+
 ## 🔹 Project Summary
 
 This project analyzes household energy insecurity in the United States using data from the U.S. Energy Information Administration's Residential Energy Consumption Survey (RECS) 2020. "Any Energy Insecurity" as defined by RECS includes one or more of the following experiences: receiving a disconnect notice, reducing or forgoing basic necessities to pay energy bills, or keeping the home at an unsafe temperature. This project investigates "Any Energy Insecurity" across these dimensions, with particular focus on **disconnection notices**.  
 By examining variations in energy insecurity across income brackets, racial and ethnic groups, housing construction vintages, and census regions, the study leverages statistical modeling, geospatial mapping, and interactive visualizations to reveal where and among whom the risks are greatest. The insights generated aim to guide more equitable energy assistance policies and interventions that address affordability and access challenges.
+
+## ❓ Research Questions
+
+* How does energy insecurity vary by race and income across U.S. regions?
+* Which census divisions experience the highest disconnection rates?
+* Can income and race reliably predict disconnection frequency?
 
 ## 📊 Project Goals
 
@@ -50,6 +58,14 @@ By examining variations in energy insecurity across income brackets, racial and 
 ## 🔧 How to Reproduce
 
 ### 🔹 Streamlit and Python Visualizations
+
+**Execution Order:**
+**Step 1:** Install dependencies listed in `requirements.txt`
+**Step 2:** Run `CODE.py` to generate and save all bar plots in the `/figures/` folder
+**Step 3:** Run `Geo-pandas.py` to generate percentage-based regional choropleths
+**Step 4:** Run `Dashboard_Streamlit.py` to launch the Streamlit app locally or push to Streamlit Cloud
+Once launched, the dashboard opens in a browser window at `http://localhost:8501`.
+If deployed, others can explore the live version via the hosted Streamlit App link below.
 
 ```bash
 # Clone the repository
@@ -112,4 +128,4 @@ Two static maps showing total (non-percentage) disconnection and energy insecuri
 ## 📙 Credits & License
 
 All code is publicly available for reproduction and reuse.
-Data courtesy of the U.S. Energy Information Administration (RECS 2020) adn US Census Bureau (2018 Division Map).
+Data courtesy of the U.S. Energy Information Administration (RECS 2020) and US Census Bureau (2018 US Division Shapefiles).
