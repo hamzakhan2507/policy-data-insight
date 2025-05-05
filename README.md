@@ -122,7 +122,7 @@ Two static maps showing total (non-percentage) disconnection and energy insecuri
 
 * **The ordered logit regression confirms the expected trend**: higher income households are less likely to face disconnection, and racial disparities persist even after controlling for income.
 * **Income and race** are strong predictors of energy insecurity.
-* **Census divisions** show wide disparities in both energy insecurity and disconnection notice rates, with the West South Central region having the highest percentage of households experiencing both.
+* **Census divisions** show wide disparities in both energy insecurity and disconnection notice rates, with the West South Central division having the highest percentage of households experiencing both.
 * A total of **8 bar graphs** (Python), **2 choropleth maps** (Python- Geopandas),  and **2 choropleth maps** (QGIS) provide visual insight.
 * **QGIS maps** are based on raw disconnection and energy insecurity counts by region (not percentage-wise).
 * **Percentage-wise regional maps** have been created using GeoPandas.
